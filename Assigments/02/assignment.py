@@ -1,3 +1,6 @@
+# Nombre integrantes: Cristobal Galindo, Javier Rehbein.
+# Fecha: 23/03/2022 (23:37 PM)
+
 import time
 
 
