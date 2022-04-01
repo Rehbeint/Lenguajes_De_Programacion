@@ -13,7 +13,15 @@ def get_number_of_prizes_in_peace_cat():
     # -----------------
     # Start code
     # ----------------
-    pass
+    with open("prize.json", "r") as content:
+        p = json.load(content)
+        print(p.get("category"))
+
+
+    # Aqui hay que hacer el recorrido del JSON y que busque las nominaciones a "peace"
+    # Luego copiar, pegar y editar las variables para los def de abajo
+
+
     # -----------------
     # End code
     # ----------------
@@ -31,7 +39,9 @@ def get_number_of_prizes_in_literature():
     # -----------------
     # Start code
     # ----------------
-    pass
+    
+    num = 11
+
     # -----------------
     # End code
     # ----------------
