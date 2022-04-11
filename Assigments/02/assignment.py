@@ -1,33 +1,32 @@
-# Nombre integrantes: Cristobal Galindo, Javier Rehbein.
-# Fecha: 23/03/2022 (23:37 PM)
-
+# Nombre integrantes: Cristobal Galindo , Javier Rehbein
+# Fecha: 23/03/2022
 import time
 
 
-def countto(number=1000):
-    for  in range(number):
+def count_to(number=1000):
+    for _ in range(number):
         time.sleep(0.001)
 
 
 class Timer():
 
-    def init(self, unit, method):
+    def __init__(self, unit):
         # Constructor
         # Parameters
         # ----------
         # unit = str
-        #     Time.unit [s|ms]
-        self.unit = unit
-        self.method = method
+        # Time.unit [s|ms]
+        # self.method = method
         # -----------------------------
         # Add code here (start)
-        # start = time.time()
         # -----------------------------
-        pass
+        self.unit = unit
         # -----------------------------
         # Add code here (end)
         # -----------------------------
-     def measure_time(self , method):
+
+    def measure_time(self, method):
+
         """
         Measure the time that takes to run a given method (function)
         Parameters
@@ -37,14 +36,19 @@ class Timer():
         Returns
         -------
         float
-            The elapsed time in the unit from constructor 
+            The elapsed time in the unit from constructor
         """
         # -----------------------------
         # Add code here (start)
-        return self.method
-        # measure_time
         # -----------------------------
-        pass
+        start = time.time()
+        method()
+        end = time.time()
+        elapsed = end - start
+        if self.unit == "S":
+            return elapsed
+        else:
+            return elapsed * 1000
         # -----------------------------
         # Add code here (end)
         # -----------------------------
@@ -61,11 +65,7 @@ class Timer():
         """
         # -----------------------------
         # Add code here (start)
-
         return self.unit
-
-        stop = time.time()
-
         # -----------------------------
         pass
         # -----------------------------
@@ -81,7 +81,6 @@ def main():
     elapsed = t.measure_time(count_to)
     print(f'Elapsed time: {elapsed} {t.get_unit()}')
 
-    ptint(stop-start)
 
-if name == 'main':
+if __name__ == '__main__':
     main()
