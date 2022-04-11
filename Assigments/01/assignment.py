@@ -1,7 +1,7 @@
-#Nombre de autores: Cristobal Galindo y Javier Rehbein
-#Curso: Lenguaje de programacion 2022
-#Nombre de Profesor: Cristhian Aguilera
-#Fecha: 16/03/2022
+# Nombre de autores: Cristobal Galindo y Javier Rehbein
+# Curso: Lenguaje de programacion 2022
+# Nombre de Profesor: Cristhian Aguilera
+# Fecha: 16/03/2022
 
 
 import typer
@@ -38,28 +38,28 @@ def guess_the_number():
     """
     # -----------------------------------
     # Add your code here
-    print("\n             BIENVENIDO A THE GAME\n Las instrucciones del juego son las siguientes:\n 1-THE GAME escogera una posicion al azar entre 1 y 100.\n 2-Debes adivinar donde esta escondido el secreto escondido de THE GAME.\n 3-El juego te señalara si la posicion que escogiste es MAYOR o MENOR donde esta oculto el secreto.\n 4-¡¡¡Empieza a jugar!!! ")
+    print("\n    BIENVENIDO A THE GAME\n ")
+    print(" Las instrucciones del juego son las siguientes:\n ")
+    print("1-THE GAME escogera una posicion al azar entre 1 y 100.\n ")
+    print("2-Debes adivinar la posicion del secreto escondido de THE GAME.\n ")
+    print("3-El juego te señalara si la posicion es MAYOR o MENOR.\n ")
+    print("4-¡¡¡Empieza a jugar!!! ")
     random = get_random_number()
-    #print(f"{random}")
-
-    num_us = int(input("Introduzca una coodenada que crea ser la correcta: \n"))
+    # print(f"{random}")
+    num_us = int(input("Introduzca una coodenada: \n"))
     print(f"Su primera posicion es:{num_us} \n")
-
     while num_us != random:
-
-         if(num_us < random):
-            print(f"Tu posicion actual es MENOR de donde está la ubicacion \n")
+        if(num_us < random):
+            print("Tu posicion actual es MENOR de donde está la ubicacion \n")
             num_us = int(input("Introduzca otra posicion:\n"))
-         else:
-             print(f"Tu posicion actual es MAYOR de donde está la ubicacion \n")
-             num_us = int(input("Introduzca otra posicion: \n"))
-    
+        else:
+            print("Tu posicion actual es MAYOR de donde está la ubicacion \n")
+            num_us = int(input("Introduzca otra posicion: \n"))
+
     pass
-    print(f"\n Has llegado a la ubicacion \n")
-    print(f"¡¡¡ Encontraste un Tesoro !!!\n")
-    print(f"¡¡¡ Ganaste OwO, eres muy genial !!!\n")
-
-
+    print("\n Has llegado a la ubicacion \n")
+    print("¡¡¡ Encontraste un Tesoro !!!\n")
+    print("¡¡¡ Ganaste OwO, eres muy genial !!!\n")
     pass
     # -----------------------------------
     # End
