@@ -1,3 +1,8 @@
+ // Integrantes: Javier Rehbein; Cristobal Galindo;
+ // Asignatura: Lenguajes de Programacion;
+ // Profesor: Cristhian Aguilera;
+ // Trabajo: Assigment 08
+
 #include <stdio.h> 
 #include <math.h> 
 int main()  
@@ -8,12 +13,6 @@ int main()
     int n1, n2;   
     float res; 
     double squareRoot; 
-
- // Integrantes: Javier Rehbein; Cristobal Galindo;
- // Asignatura: Lenguajes de Programacion;
- // Profesor: Cristhian Aguilera;
- // Trabajo: Assigment 08
-    
     
     printf (" Elige una operacion(+, -, *, /): \n ");  
     scanf ("%c", &opt); // escanea el operador a usar  
